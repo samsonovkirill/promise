@@ -1,0 +1,28 @@
+{
+  "name": "custom-promise",
+  "version": "0.0.1",
+  "description": "Promise",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist/",
+    "build": "npm run lint && npm run clean && babel src --out-dir dist",
+    "lint": "eslint src"
+  },
+  "author": "Samsonov Kirill",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4"
+  }
+}
