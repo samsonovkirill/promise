@@ -72,7 +72,7 @@ class CustomPromise {
 
     const onRejectedReaction = (error) => {
       try {
-        reject(onRejectedHandler(error));
+        resolve(onRejectedHandler(error));
       } catch (e) {
         reject(e);
       }
